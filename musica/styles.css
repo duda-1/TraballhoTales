@@ -1,0 +1,128 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+  }
+  
+  .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1DB954;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+  
+  .navbar .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    background: url('https://via.placeholder.com/1200x600') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: #1DB954;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #1aa34a;
+  }
+  
+  .musicas, .videos, .agenda, .loja {
+    padding: 50px 30px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .player-container {
+    margin-top: 20px;
+  }
+  
+  .video-container {
+    margin-top: 20px;
+  }
+  
+  .agenda .shows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .show {
+    background-color: #333;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .loja .produto {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .loja .produto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  .loja .btn {
+    margin-top: 10px;
+  }
+  
+  .footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  

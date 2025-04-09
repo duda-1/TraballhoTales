@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nome do Artista - Página Oficial</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barra de navegação -->
+  <header class="navbar">
+    <div class="logo">ArtistaNome</div>
+    <div class="nav-links">
+      <a href="#musicas">Músicas</a>
+      <a href="#videos">Vídeos</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#loja">Loja</a>
+    </div>
+  </header>
+
+  <!-- Banner principal -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Bem-vindo ao Mundo de ArtistaNome</h1>
+      <p>A música que você ama, a agenda de shows e tudo sobre o artista.</p>
+      <a href="#musicas" class="btn">Ouça Agora</a>
+    </div>
+  </section>
+
+  <!-- Seção de músicas -->
+  <section id="musicas" class="musicas">
+    <h2>Ouça as Músicas</h2>
+    <div class="player-container">
+      <audio controls>
+        <source src="musica.mp3" type="audio/mp3">
+        Seu navegador não suporta o formato de áudio.
+      </audio>
+    </div>
+  </section>
+
+  <!-- Seção de vídeos -->
+  <section id="videos" class="videos">
+    <h2>Assista aos Vídeos</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Seção de agenda de shows -->
+  <section id="agenda" class="agenda">
+    <h2>Agenda de Shows</h2>
+    <div class="shows">
+      <div class="show">
+        <h3>Show ao Vivo - São Paulo</h3>
+        <p>Data: 20 de Maio de 2025</p>
+        <p>Local: Arena XYZ</p>
+      </div>
+      <div class="show">
+        <h3>Show ao Vivo - Rio de Janeiro</h3>
+        <p>Data: 25 de Maio de 2025</p>
+        <p>Local: Estádio ABC</p>
+      </div>
+      <!-- Adicione mais shows conforme necessário -->
+    </div>
+  </section>
+
+  <!-- Seção de loja -->
+  <section id="loja" class="loja">
+    <h2>Loja Oficial</h2>
+    <div class="produto">
+      <img src="https://via.placeholder.com/200" alt="Camiseta Artista">
+      <h3>Camiseta Oficial</h3>
+      <p>Preço: R$ 79,99</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+    <div class="produto">
+      <img src="https://via.placeholder.com/200" alt="Álbum Artista">
+      <h3>Álbum Físico</h3>
+      <p>Preço: R$ 29,99</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+    <!-- Adicione mais produtos conforme necessário -->
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 ArtistaNome. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

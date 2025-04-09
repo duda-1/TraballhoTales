@@ -4,19 +4,25 @@ import axios from 'axios';
 const Livros = () => {
   const [livros, setLivros] = useState([]); // Estado para armazenar os livros
   const [loading, setLoading] = useState(true); // Estado para indicar se está carregando
-  const [error, setError] = useState(null); // Estado para lidar com erros
+  const [error, setError] = useState(null); // Estado para erros
 
   // useEffect para fazer a requisição GET assim que o componente for montado
   useEffect(() => {
     // Função para buscar os livros disponíveis
     const fetchLivros = async () => {
       try {
+        // Fazendo a requisição GET para a API
         const response = await axios.get('https://localhost:7057/api/Livro'); // URL da sua API
-        setLivros(response.data); // Armazena os livros no estado
+        if (response.data) {
+          setLivros(response.data); // Armazena os livros no estado
+        } else {
+          throw new Error('Resposta da API não contém dados');
+        }
         setLoading(false); // Atualiza o estado de loading
       } catch (err) {
-        setError('Erro ao carregar os livros'); // Se houver erro, armazena a mensagem de erro
-        setLoading(false); // Atualiza o estado de loading
+        console.error("Erro ao carregar os livros:", err);
+        setError('Não foi possível carregar os livros. Tente novamente mais tarde.');
+        setLoading(false);
       }
     };
 
@@ -28,20 +34,24 @@ const Livros = () => {
   }
 
   if (error) {
-    return <div>{error}</div>; // Exibe se ocorrer um erro durante a requisição
+    return <div>{error}</div>; // Exibe erro caso ocorra
   }
 
   return (
     <div>
-      <h1>Livros Disponíveis</h1>
+      <h4>Livros Disponíveis</h4>
       <ul>
-        {livros.map((livro) => (
-          <li key={livro.id}>
-            <strong>{livro.titulo}</strong> - {livro.autor} ({livro.ano})
-            <br />
-            {livro.genero ? <em>{livro.genero}</em> : null}
-          </li>
-        ))}
+        {livros.length > 0 ? (
+          livros.map((livro) => (
+            <li key={livro.id}>
+              <strong>{livro.titulo}</strong> - {livro.autor} ({livro.ano})
+              <br />
+              {livro.genero && <em>{livro.genero}</em>}
+            </li>
+          ))
+        ) : (
+          <p>Não há livros disponíveis.</p>
+        )}
       </ul>
     </div>
   );
