@@ -1,0 +1,67 @@
+.livros-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .genero-section {
+    margin-bottom: 50px;
+  }
+  
+  .genero-titulo {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    border-left: 5px solid #007acc;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .livros-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 por linha */
+    gap: 20px;
+  }
+  
+  .livro-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease;
+  }
+  
+  .livro-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .livro-imagem {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+  
+  .livro-info {
+    padding: 15px;
+  }
+  
+  .livro-info h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  .loading, .erro {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 50px;
+    color: #555;
+  }
+  

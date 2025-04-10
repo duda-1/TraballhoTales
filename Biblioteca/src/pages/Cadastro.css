@@ -1,0 +1,103 @@
+/* Estilos gerais para o formulário de cadastro */  
+  .cadastro {
+    background: url(''); /* A imagem de fundo do container pode ser colocada aqui, se necessário */
+  }
+  
+  /* Container de cadastro */
+  .cadastro-container {
+    max-width: 900px;    /* Largura máxima aumentada para 800px */
+    width: 100%;         /* O container ocupa até 100% da largura até o limite de 800px */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.459);
+    margin: 0 auto;      /* Garante que o container fique centralizado horizontalmente */
+  }
+  
+  .cadastro-container h2 {
+    text-align: center;
+    color: #000000; /* Cor preta para o título */
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    color: #000000; /* Cor preta para o texto do rótulo */
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+    background-color: #f7fafc;
+    color: #000000; /* Cor preta para o texto dos campos */
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #0054a3;
+  }
+  
+  button.btn-cadastrar {
+    width: 100%;
+    padding: 10px;
+    background-color: #0058aa; /* Azul para o botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button.btn-cadastrar:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  button.btn-cadastrar:hover {
+    background-color: #004085;
+  }
+  
+  /* Mensagens de erro e sucesso */
+  .message {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  .message.success {
+    background-color: #38a169; /* Cor verde para sucesso */
+  }
+  
+  .message.error {
+    background-color: #e53e3e; /* Cor vermelha para erro */
+  }
+  
+  /* Estilos para os campos com erro */
+  .input-error {
+    border-color: #e53e3e; /* Vermelho para campos com erro */
+    background-color: #fef2f2; /* Cor de fundo clara */
+  }
+  
+  /* Link de login */
+  .login-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .login-link a {
+    color: #3182ce;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
