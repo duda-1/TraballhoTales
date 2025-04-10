@@ -27,7 +27,7 @@ const Navbar = () => {
     <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-logo">📚 Biblioteca</div>
       <nav className="navbar-links">
-        <Link to="/" className={`navbar-link ${isActive('/')}`}>Home</Link>
+        <Link to="/home" className={`navbar-link ${isActive('/home')}`}>Home</Link>
         <Link to="/livros" className={`navbar-link ${isActive('/livros')}`}>Livros</Link>
         <Link to="/emprestimos" className={`navbar-link ${isActive('/emprestimos')}`}>Empréstimos</Link>
 
