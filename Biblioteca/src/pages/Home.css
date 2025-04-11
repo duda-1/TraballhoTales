@@ -22,35 +22,46 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   }
   
-  /* Informações sobre a biblioteca */
-  .informacoes {
+  /* Conteúdo principal com texto e carrossel lado a lado */
+  .conteudo-principal {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
-    text-align: center;
+    flex-wrap: wrap; /* Adiciona responsividade */
+  }
+  
+  .informacoes {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
   }
   
   .informacoes h2 {
     font-size: 2rem;
+    margin-bottom: 10px;
   }
   
   .informacoes p {
     font-size: 1rem;
-    max-width: 800px;
-    margin: 0 auto;
     line-height: 1.6;
   }
   
-  /* Carrossel */
   .carrossel {
-    margin: 20px 0;
+    flex: 1;
     padding: 20px;
+    display: flex;
+    justify-content: center;
   }
   
+  /* Estilo do carrossel de imagens */
   .slick-slide img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
   }
   
-  /* Lista de livros */
+  /* Livros disponíveis */
   .livros {
     padding: 20px;
   }
