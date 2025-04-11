@@ -1,0 +1,94 @@
+/* Home.css */
+
+/* Banner */
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Informações sobre a biblioteca */
+  .informacoes {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .informacoes h2 {
+    font-size: 2rem;
+  }
+  
+  .informacoes p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Carrossel */
+  .carrossel {
+    margin: 20px 0;
+    padding: 20px;
+  }
+  
+  .slick-slide img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Lista de livros */
+  .livros {
+    padding: 20px;
+  }
+  
+  .livros h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .livros-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .livro-card {
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .livro-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .livro-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .livro-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  

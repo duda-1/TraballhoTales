@@ -23,8 +23,15 @@
   
   /* Logo do Navbar */
   .navbar-logo {
-    font-size: 1.25rem; /* Logo um pouco menor */
+    font-size: 1.8rem;
     font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-logo:hover {
+    color: #ffffff;
   }
   
   /* Links de navegação */
@@ -32,6 +39,7 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    color: white;
   }
   
   /* Estilo para cada link */

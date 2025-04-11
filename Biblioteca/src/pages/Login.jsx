@@ -1,3 +1,4 @@
+// Login.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router';
@@ -24,13 +25,17 @@ const Login = () => {
       });
 
       if (response.status === 200) {
+        const { usuarioId, usuarioNome } = response.data;
+
+        console.log('Usuário logado:', response.data); // 🐛 debug
+
+        localStorage.setItem('usuarioId', usuarioId); // ✅ agora salva corretamente
+        localStorage.setItem('usuarioLogado', usuarioNome);
+
         setMessage('Login bem-sucedido!');
-      
-        // Salva o nome do usuário para a Navbar reconhecer que está logado
-        localStorage.setItem('usuarioLogado', nome);
-      
+
         setTimeout(() => {
-          navigate('/home'); 
+          navigate('/');
         }, 2000);
       } else {
         setMessage('Nome ou senha inválidos.');
