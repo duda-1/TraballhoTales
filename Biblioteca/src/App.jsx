@@ -8,6 +8,7 @@ import Emprestimos from "./pages/Emprestimos";
 import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
 import Perfil from "./pages/Perfil";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
             <Route path="/perfil" element={<Perfil />} />
           </Routes>
         </div>
-
+        <Footer />
       
       </div>
     </Router>
