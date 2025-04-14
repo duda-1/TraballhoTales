@@ -3,6 +3,8 @@ import './Footer.css';
 
 const Footer = () => {
   return (
+
+    <section className='rodape'>
     <footer className="footer">
       <div className="footer-content">
         <p>© {new Date().getFullYear()} Biblioteca Central. Todos os direitos reservados.</p>
@@ -13,6 +15,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </section>
   );
 };
 
