@@ -78,7 +78,7 @@ const Livros = () => {
     };
 
     try {
-      await axios.post('https://localhost:7057/api/Emprestimo', emprestimoData);
+      await axios.post('https://localhost:7057/api/Emprestimos', emprestimoData);
       setMessage({ visible: true, text: 'Livro emprestado com sucesso!', type: 'sucesso' });
       setShowModal(false);
       // Limpa o input do usuário, se desejado
