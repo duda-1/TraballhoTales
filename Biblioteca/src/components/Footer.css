@@ -51,7 +51,7 @@
   left: 50%; /* move o ponto de referência pro meio */
   transform: translateX(-50%); /* puxa metade da largura para a esquerda */
   bottom: 0;
- 
+ /*comitando para a eduarda*/
 }
 
 .footer-content {
