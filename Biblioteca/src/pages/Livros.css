@@ -175,9 +175,4 @@ h2 {
   color: #555;
 }
 
-.livro-card img {
-  width: 100%;
-  height: 150px; /* alterado de 350px para 150px */
-  object-fit: cover;
-  display: block;
-}
+
