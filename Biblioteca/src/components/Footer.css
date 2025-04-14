@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Remover margens e preenchimentos padrão */
 .rodape{
     margin: 0;
@@ -39,3 +40,38 @@
     color: #6ca7ff;
   }
   
+=======
+.footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 50px 200px; /* espaçamento interno mantido */
+  text-align: center;
+  width: 110%; /* aumenta a largura */
+  position: relative;
+  left: 50%; /* move o ponto de referência pro meio */
+  transform: translateX(-50%); /* puxa metade da largura para a esquerda */
+  bottom: 0;
+ 
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ecf0f1;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+>>>>>>> Marcela
